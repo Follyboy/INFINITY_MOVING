@@ -47,6 +47,12 @@ body {
     color: #f1f1f1;
 }
 
+.container-in {
+    position: relative;
+    text-align: center;
+    color: #f1f1f1;
+}
+
 .btn {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -106,4 +112,22 @@ td {
 .divider {
     border-left: 2px solid white;
     height: 100%;
+}
+
+.header-h2 {
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 800px) {
+    .container-in img {
+        height: 820px;
+    }
+
+    .container img {
+        width: 20%;
+    }
+
+    .header-h2 {
+        margin-top: 8%;
+    }
 }
