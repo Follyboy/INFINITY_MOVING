@@ -118,9 +118,14 @@ td {
     margin-top: 2%;
 }
 
+.content-p {
+    font-family: fantasy;
+    padding: 30px 20% 30px 20%;
+}
+
 @media screen and (max-width: 800px) {
     .container-in img {
-        height: 820px;
+        height: 650px;
     }
 
     .container img {
@@ -129,5 +134,10 @@ td {
 
     .header-h2 {
         margin-top: 8%;
+    }
+
+    .content-p {
+        font-family: serif;
+        padding: 30px 20% 30px 20%;
     }
 }
