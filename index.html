@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/infinity_logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/main.css">
+    <title>INFINITY MOVING</title>
+</head>
+<body>
+<div class="container">
+    <div class="header" id="myHeader">
+        <img src="assets/infinity_logo.png" alt="INFINITY_LOGO"/>
+        <h2 style="margin-top: 2%">INFINITY MOVING</h2>
+    </div>
+    <div class="container">
+        <img src="assets/moving_photo.png" alt="MOVING_IMAGE" style="width:100%; opacity: 50%">
+        <div class="centered">
+            <h1>MOVING TO INFINITY AND BEYOND!</h1>
+            <button class="btn" onclick="openPopup()">OUR SERVICES</button>
+        </div>
+        <div class="bottom-center">
+            <h3 style="font-family: fantasy">SCROLL DOWN</h3>
+        </div>
+    </div>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-content">
+            <h2 style="text-align: center">SERVICES</h2>
+            <ul style="text-align: left">
+                <li>Local Moving Service</li>
+                <li>Heavy Lifting Moving</li>
+                <li>Furniture Delivery Service</li>
+            </ul>
+            <span class="popup-close" onclick="closePopup()">&#x2716;</span>
+        </div>
+    </div>
+    <h2 style="color: aqua; font-family: Luminari,serif">OUR VISION</h2>
+    <p style="font-family: fantasy; padding: 30px 20% 30px 20%;">
+        Infinity Moving operates with efficiency and reliability.
+        We understand the value of your time, and we pride ourselves
+        on being punctual and dependable. Our commitment to timeliness
+        means that your move will be executed according to schedule, allowing
+        you to settle into your new space without unnecessary delays.
+    </p>
+
+    <table>
+        <tr>
+            <td>
+                <!-- Content of the first column -->
+                <h2 style="color: aqua; font-family: Georgia,serif">MEET THE FOUNDER</h2>
+            </td>
+            <td class="divider">
+                <!-- Content of the second column -->
+                <h2 style="color: aqua; font-family: Georgia,serif">CONTACT US</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="assets/ceo.png" alt="ceo_image" style="border-radius: 50%; width: 20%">
+                <p>AHAD&nbsp;&nbsp;OYAKHILOME&nbsp;&nbsp;GANI-ENAHORO</p>
+            </td>
+            <td class="divider">
+                <p>&#9993; Email:</p>
+                <p>&#128222; Call:</p>
+                <p>&#127968; Address:</p>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+    function openPopup() {
+        var overlay = document.getElementById("popup-overlay");
+        overlay.style.display = "block";
+    }
+
+    function closePopup() {
+        var overlay = document.getElementById("popup-overlay");
+        overlay.style.display = "none";
+    }
+</script>
+</body>
+</html>
